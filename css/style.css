@@ -220,12 +220,15 @@ a {
   margin-left: 30px;
 }
 
-.features-icon {
+.fetur-cont-icon {
   background-color: var(--button-background-color);
-  border-radius: 4px;
-  height: 120px;
-
   margin-bottom: 30px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 120px;
 }
 
 .features .list-head {
@@ -292,6 +295,32 @@ a {
   justify-content: space-between;
 }
 
+.team-list-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  border-radius: 50%;
+}
+
+.team-link:hover,
+.team-link:focus {
+  color: #ffffff;
+  background: var(--link-button-blue-color);
+}
+
+.team-icon {
+  fill: currentColor;
+}
+
 .team-container {
   background-color: var(--text-fone);
   text-align: center;
@@ -322,6 +351,11 @@ a {
   margin-top: 10px;
 }
 
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .client-head {
   font-style: normal;
   font-weight: bold;
@@ -332,6 +366,35 @@ a {
   text-align: center;
 
   color: var(--heading-text-color);
+
+  margin-bottom: 50px;
+}
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+
+  border-radius: 4px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--link-button-blue-color);
+  border: 1px solid var(--link-button-blue-color);
+}
+
+.client-icon {
+  fill: currentColor;
 }
 
 /*portfolio*/
@@ -392,8 +455,12 @@ a {
   margin-top: 30px;
 }
 
-.work-item:hover,
-.work-item:focus {
+.work-link {
+  display: block;
+}
+
+.work-link:hover,
+.work-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
@@ -490,21 +557,32 @@ a {
   padding-bottom: 20px;
 }
 
-.foot-icon {
-}
-
 .soc-list {
-  margin-left: auto;
   display: flex;
+  justify-content: space-between;
 }
 
 .soc-item {
+  padding-right: 10px;
 }
 
 .soc-link {
   display: flex;
   justify-content: center;
-
+  align-items: center;
   width: 44px;
   height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  color: #ffffff;
+}
+
+.soc-link:hover,
+.soc-link:focus {
+  background: var(--link-button-blue-color);
+}
+
+.foot-icon {
+  fill: currentColor;
 }
